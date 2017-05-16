@@ -14,7 +14,7 @@
 
 ```bash
 # Installation
- clone https://github.com/bitjawn/VAT.git or download the zip
+ clone https://github.com/bitjawn/VAD.git or download the zip
  
  npm install
  
