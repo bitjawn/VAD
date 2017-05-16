@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import Webmail from './WebMail'
-import Snailmail from './Snailmail'
+    import Webmail from './WebMail'
+    import Snailmail from './Snailmail'
 
-export default {
-    name: 'contact',
-    components: { Webmail, Snailmail }
-}
+    export default {
+        name: 'contact',
+        components: { Webmail, Snailmail }
+    }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
