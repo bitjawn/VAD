@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import Products from '@/components/Products'
+import Location from '@/components/Location'
 import VuePouch from 'vue-pouch-db';
  
 Vue.use(VuePouch);
@@ -29,9 +29,9 @@ export default new Router({
             component: Contact
         },
         {
-            path: '/products',
-            name: 'Products',
-            component: Products
+            path: '/location',
+            name: 'location',
+            component: Location
         }
     ]
 })

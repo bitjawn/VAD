@@ -1,17 +1,17 @@
 <template>
     <div class="row">
-        <location></location>
+        <snailmail></snailmail>
         <webmail></webmail>       
     </div>      
 </template>
 
 <script>
 import Webmail from './WebMail'
-import Location from './Location'
+import Snailmail from './Snailmail'
 
 export default {
     name: 'contact',
-    components: { Webmail, Location }
+    components: { Webmail, Snailmail }
 }
 </script>
 

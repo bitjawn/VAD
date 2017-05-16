@@ -1,6 +1,6 @@
 <template>
      <div class="right-floater">
-            <h3 class="header">{{sender}} <small>Web Mail</small></h3>
+            <h3 class="header">{{title}} <small>{{how}}</small></h3>
             <form method="post" action="/contact">
                      <div class="input-group">
                         <span class="input-group-label"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -32,13 +32,14 @@
 </template>
 
 <script>
-    export default {
+    export default {    
+        name: 'webmail',
         data() {
             return {
-                sender: 'Send us a message'
+                title: 'Send us a message',
+                how: 'Via web-mail'
             }
-        },
-        name: 'webmail'
+        }
     }
 </script>
 
