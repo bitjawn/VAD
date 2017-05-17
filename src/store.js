@@ -6,16 +6,21 @@ Vue.use(Vuex);
 
 const state = {
     userMessages: [
-        {id:uuid.v4(), name:'Test 0', email:'test@tested.net', subject:'Header', message:'Test message zero'}
+        
     ]
 }
 
 const mutations = {
-    addMessage: (state, msg) => {msg.id = uuid.v4(); state.userMessages.push(msg);}   
+    addMessage: (state, msg) => {msg.id = uuid.v4(); state.userMessages.push(msg);},   
+    removeMessage: (state, id) => {
+        var index = state.userMessages.find(x => x.id == id);
+        state.userMessages.splice(index, 1);
+    }
 }
 
 const actions = {
     addNewMessage: (context, payload) => context.commit('addMessage', payload),
+    removeUserMessage: (context, payload) => context.commit('removeMessage', payload)
 }
 
 const getters = {

@@ -17,8 +17,8 @@
                 {{message.subject}}</br>
                 {{message.message}}</p>
             <div class="">
-                <span class="alert button pull-left">Delete</span>
-                <span class="success button pull-right">Send</span>
+                <button v-on:click="deleteMessage" :id="message.id" class="alert button pull-left">Delete</button>
+                <button class="success button pull-right">Send</button>
             </div>
             </div>
         </div>
@@ -26,13 +26,19 @@
 </template>
 
 <script>
-    import { mapGetters } from 'vuex'
+    import { mapGetters, mapActions } from 'vuex'
     export default {
         name: 'snailmail',
         data () {
             return {
                 title: 'Contact Us',
                 how: 'Via snail-mail or phone'
+            }
+        },
+        methods: {
+            ...mapActions(['removeUserMesssage']),
+            deleteMessage: function(e) {
+                this.$store.dispatch('removeUserMessage', e.target.id);
             }
         },
         computed: {
