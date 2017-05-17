@@ -27,9 +27,15 @@ const getters = {
     messages: state => state.userMessages
 }
 
+const moduleUserMessages = {
+    state:state,
+    mutations:mutations,
+    actions:actions,
+    getters:getters
+}
+
 export default new Vuex.Store({
-    state,
-    mutations,
-    actions,
-    getters
+    modules: {
+        a:moduleUserMessages
+    }
 })
