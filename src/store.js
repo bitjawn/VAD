@@ -14,7 +14,9 @@ const mutations = {
     addMessage: (state, msg) => {msg.id = uuid.v4(); state.userMessages.push(msg);},   
     removeMessage: (state, id) => {
         var index = state.userMessages.find(x => x.id == id);
-        state.userMessages.splice(index, 1);
+        if (index != -1) {
+            state.userMessages.splice(index, 1);
+        }
     }
 }
 

@@ -16,10 +16,8 @@
                 {{message.email}}</br>
                 {{message.subject}}</br>
                 {{message.message}}</p>
-            <div class="">
                 <button v-on:click="deleteMessage" :id="message.id" class="alert button pull-left">Delete</button>
                 <button class="success button pull-right">Send</button>
-            </div>
             </div>
         </div>
     </div>
