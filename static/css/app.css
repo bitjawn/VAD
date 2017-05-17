@@ -55,6 +55,9 @@
     margin:10px;
 }
 
+.user-messages {
+    height:50vh;
+}
 
 
 iframe {

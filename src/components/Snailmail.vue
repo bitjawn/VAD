@@ -9,13 +9,13 @@
                 484-922-3530
             </p>
         </div>
-        <div class="row">
+        <div class="row user-messages v-scroll">
             <div class="message" v-for="message in messages">
-                <p>{{message.id}}</p>
-                <p>{{message.name}}</p>
-                <p>{{message.email}}</p>
-                <p>{{message.subject}}</p>
-                <p>{{message.message}}</p>
+                <p>{{message.id}}</br>
+               {{message.name}}</br>
+                {{message.email}}</br>
+                {{message.subject}}</br>
+                {{message.message}}</p>
             </div>
         </div>
     </div>
