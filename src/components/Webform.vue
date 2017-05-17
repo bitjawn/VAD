@@ -28,18 +28,11 @@
                 </div>
             </div>
         </form>
-        <div class="message" v-for="message in messages">
-            <p>{{message.id}}</p>
-            <p>{{message.name}}</p>
-            <p>{{message.email}}</p>
-            <p>{{message.subject}}</p>
-            <p>{{message.message}}</p>
-        </div>
     </div>
 </template>
 
 <script>
-    import { mapGetters, mapActions } from 'vuex'
+    import { mapActions } from 'vuex'
     export default {        
         name: 'webform',
         data() {
@@ -51,9 +44,6 @@
                 subject:'',
                 message:''
             }
-        },
-        computed: {
-            ...mapGetters(['messages'])
         },
         methods: {
             clearFields: function() {
@@ -81,12 +71,5 @@
 </script>
 
 <style scoped>
-    .message {
-        border:solid 1pt #aaa;
-        background-color:#fff;
-        font-weight:888;
-        padding:5px;
-        margin:5px;
-        text-align:left;
-    }
+   
 </style>
