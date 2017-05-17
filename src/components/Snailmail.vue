@@ -38,9 +38,8 @@
                 this.$store.dispatch('removeUserMessage', e.target.id);
             }
         },
-        computed: {
-            ...mapGetters(['messages'])
-        }
+        computed: mapGetters({messages:'messages'})
+        
     }
 </script>
 
