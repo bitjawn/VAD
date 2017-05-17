@@ -24,7 +24,7 @@
             
             <div class="input-group">
                 <div class="input-group-button">
-                    <input type="submit" class="button" value="Submit" v-on:click="submitted">
+                    <input type="submit" class="button" value="Submit" @click="submitted">
                 </div>
             </div>
         </form>
