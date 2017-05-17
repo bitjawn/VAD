@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import Webmail from './WebMail'
+    import Webmail from './Webmail'
     import Snailmail from './Snailmail'
 
     export default {
