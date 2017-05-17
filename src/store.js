@@ -5,9 +5,7 @@ import uuid from 'uuid';
 Vue.use(Vuex);
 
 const state = {
-    userMessages: [
-        
-    ]
+    userMessages: []
 }
 
 const mutations = {
