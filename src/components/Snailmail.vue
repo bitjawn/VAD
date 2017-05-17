@@ -11,11 +11,10 @@
         </div>
         <div class="row user-messages v-scroll">
             <div class="message clearfix" v-for="message in messages">
-                <p>{{message.id}}</br>
-               {{message.name}}</br>
-                {{message.email}}</br>
-                {{message.subject}}</br>
-                {{message.message}}</p>
+                <p><b>Sender: </b>{{message.name}}</br>
+                <b>Email: </b> {{message.email}}</br>
+                <b>Subject:  </b>{{message.subject}}</br>
+                <b>Message: </b> {{message.message}}</p>
                 <button v-on:click="deleteMessage" :id="message.id" class="alert button pull-left">Delete</button>
                 <button class="success button pull-right">Send</button>
             </div>
