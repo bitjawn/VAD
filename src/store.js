@@ -25,7 +25,7 @@ const actions = {
 
 const getters = {
     messages: state => state.userMessages
-}
+}   
 
 export default new Vuex.Store({
     state,
