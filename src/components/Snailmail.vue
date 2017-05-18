@@ -15,7 +15,7 @@
                 <b>Email: </b> {{message.email}}</br>
                 <b>Subject:  </b>{{message.subject}}</br>
                 <b>Message: </b> {{message.message}}</p>
-                <button @click="deleteMessage" :id="message.id" class="alert button pull-left">Delete</button>
+                <button @click="deleteMessage(message.id)" class="alert button pull-left">Delete</button>
                 <button class="success button pull-right">Send</button>
             </div>
         </div>
@@ -34,12 +34,13 @@
         },
         methods: {
             ...mapActions(['removeUserMesssage']),
-            deleteMessage: function(e) {
-                this.$store.dispatch('removeUserMessage', e.target.id);
+            deleteMessage: function(id) {
+                this.$store.dispatch('removeUserMessage', id);
             }
         },
-        computed: mapGetters({messages:'messages'})
-        
+        computed: {
+            ...mapGetters(['messages'])
+        }
     }
 </script>
 
