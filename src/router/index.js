@@ -4,9 +4,8 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Location from '@/components/Location'
-import VuePouch from 'vue-pouch-db';
+import Products from '@/components/Products'
  
-Vue.use(VuePouch);
 Vue.use(Router)
 
 export default new Router({
@@ -32,6 +31,11 @@ export default new Router({
             path: '/location',
             name: 'location',
             component: Location
+        },
+        {
+            path: '/products',
+            name: 'products',
+            component: Products
         }
     ]
 })

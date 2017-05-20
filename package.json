@@ -10,9 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "node-couchdb": "^1.1.1",
+    "pouchdb": "^6.2.0",
     "uuid": "^3.0.1",
     "vue": "^2.2.6",
-    "vue-pouch-db": "^2.0.1",
     "vue-router": "^2.3.1",
     "vuex": "^2.3.1"
   },

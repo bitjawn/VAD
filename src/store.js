@@ -19,8 +19,8 @@ const mutations = {
 }
 
 const actions = {
-    addNewMessage: (context, payload) => context.commit('addMessage', payload),
-    removeUserMessage: (context, payload) => context.commit('removeMessage', payload)
+    addNewMessage: ({commit}, payload) => commit('addMessage', payload),
+    removeUserMessage: ({commit}, payload) => commit('removeMessage', payload)
 }
 
 const getters = {
