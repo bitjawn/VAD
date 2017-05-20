@@ -26,7 +26,7 @@ const actions = {
     removeUserMessage: ({commit}, payload) => commit('removeMessage', payload),
     sendUserMessage: ({commit}, id) => {
         return new Promise((response, reject) => {
-            setTimeout(() => { commit('sendUserMessage'); resolve()}, 1000)
+            setTimeout(() => { commit('sendUserMessage'); resolve()}, 500)
         })
     }
 }
