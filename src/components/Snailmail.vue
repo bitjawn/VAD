@@ -9,7 +9,7 @@
                 484-922-3530
             </p>
         </div>
-        <div class="row user-messages v-scroll">
+        <div class="container user-messages v-scroll">
             <div class="message clearfix" v-for="message in messages">
                 <p><b>Sender: </b>{{message.name}}</br>
                 <b>Email: </b> {{message.email}}</br>

@@ -1,8 +1,8 @@
 <template>
     <span>
         <h2 class="header">{{title}}</h2>
-        <div class="row main-body v-scroll">
-            <div class="left-floater main-div">
+        <div class="row v-scroll">
+            <div class="left-floater">
 
             </div>
         </div>
