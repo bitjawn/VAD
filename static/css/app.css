@@ -176,4 +176,8 @@ li {
     .left-floater p {
             text-align:center;
         }
+
+    .message p {
+            text-align:left;
+        }
 }
