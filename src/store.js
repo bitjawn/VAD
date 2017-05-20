@@ -15,12 +15,20 @@ const mutations = {
         if (index != -1) {
             state.userMessages.splice(index, 1);
         }
+    },
+    sendUserMessage: (state, id) => {
+        
     }
 }
 
 const actions = {
     addNewMessage: ({commit}, payload) => commit('addMessage', payload),
-    removeUserMessage: ({commit}, payload) => commit('removeMessage', payload)
+    removeUserMessage: ({commit}, payload) => commit('removeMessage', payload),
+    sendUserMessage: ({commit}, id) => {
+        return new Promise((response, reject) => {
+            setTimeout(() => { commit('sendUserMessage'); resolve()}, 1000)
+        })
+    }
 }
 
 const getters = {
